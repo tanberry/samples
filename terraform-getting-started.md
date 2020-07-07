@@ -1,27 +1,31 @@
 # Getting Started with Terraform
 
-Terraform is a popular language for defining and provisioning infrastructure as code (IaC).
+Terraform is a tool for defining and provisioning infrastructure as code (IaC) on multi-Cloud environemnts, using a language known as HashiCorp Configuration Language (HCL).
+
+This topic explains how to install Terraform, create a configuration file, intialize and verify your instance, deploy your configuration, and then destroy the infrastructure.
 
 ## Prerequisites
 
 To install Terraform, go to [Terraform.io](https://www.terraform.io/downloads.html) and download the compressed binary application executable file that is appropriate for your development environment.
 
-With Terraform installed, let's dive right into it and start creating some infrastructure.
+## Configure and initialize your environment 
 
-1. Create a new directory on your local machine and create Terraform configuration code inside it.
+After downloading and installing Terraform, the next step is to create your working directory and a configuration file.
+
+1. Create a new directory on your local machine and navigate to the new directory.
 
 ```shell
 $ mkdir terraform-demo
 $ cd terraform-demo
 ```
 
-2. Next, create a file for your Terraform configuration code.
+2. Next, create a configuration file named `main.tf`.
 
 ```shell
 $ touch main.tf
 ```
 
-Paste the following lines into the file.
+3. Add the following lines to the `main.tf` file.
 
 ```hcl
 provider "docker" {
@@ -48,18 +52,30 @@ Initialize Terraform with the `init` command. The AWS provider will be installed
 $ terraform init
 ```
 
-You shoud check for any errors. If it ran successfully, provision the resource with the `apply` command.
+Verify that Terraform initialized successfully (and found its config plan?????) by running the `terraform plan` command. TIP: the `plan` command is a useful to check "whether the execution plan for a set of changes matches your expectations without making any changes to real resources or to the state."
+
+```shell
+$ terraform plan
+```
+
+## Provision Terraform
+After verifying that Terraform initialised successfully, provision the resource with the `apply` command.
 
 ```shell
 $ terraform apply
 ```
 
-The command will take up to a few minutes to run and will display a message indicating that the resource was created.
+The command will take several minutes to run and display a message indicating that the resource was created.
+
+## Destroy the infrastrucutre
 
 Finally, destroy the infrastructure.
 
 ```shell
 $ terraform destroy
 ```
+ 
+ On the confirmation prompt, type `yes` and press ENTER. Terraform then destroys the resources.
 
-Look for a message are the bottom of the output asking for confirmation. Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
+# Next Steps
+=================TODO==============
