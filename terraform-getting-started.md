@@ -2,13 +2,13 @@
 
 Terraform is a tool for defining and provisioning infrastructure as code (IaC) in a wide-range of environments, using a language known as HashiCorp Configuration Language (HCL).  
 
-This quick-start topic is intended to help you learn the basics of getting started with Terraform. Following the steps below, you will create a configuration file using pre-defined resources in a Docker container, intialize and verify your instance, deploy the resources, and then destroy the infrastructure. 
+This quick-start topic is intended to help you learn the basics of getting started with Terraform. Following the steps below, you will create a configuration file using pre-defined resources in a Docker container, initialize and verify your instance, deploy the resources, and then destroy the infrastructure. 
 
 ## Prerequisites
 
 To complete the steps in this topic you need to install Terraform and Docker.
 
-* To install Terraform, go to [Terraform.io](https://www.terraform.io/downloads.html) and download the compressed binary application executable file that is appropriate for your development environment. Be sure to define the directory containing the Terraform binary file in your `$PATH`, for example `usr/local/bin`. 
+* To install Terraform, go to [Terraform.io](https://www.terraform.io/downloads.html) and download the executable file that is appropriate for your development environment. Be sure to define the directory containing the Terraform binary file in your `$PATH`, for example `usr/local/bin`. 
 
 * To install Docker, go to [Docker.com](https://www.docker.com/products/docker-desktop) and download and install Docker Desktop. 
 
@@ -16,7 +16,7 @@ To complete the steps in this topic you need to install Terraform and Docker.
 
 After installing Terraform and Docker, the next step is to create your working directory and a configuration file.
 
-1. In your console or terminal create a new directory on your local machine and navigate to the new directory.
+1. In your console or terminal, create and navigate to a new directory on your local machine.
 
 ```shell
 $ mkdir terraform-demo
@@ -50,17 +50,17 @@ resource "docker_image" "nginx" {
 }
 ```
 
-TIP: You can use the `terraform validate` command to parse your **main.tf** file and validate the contents. 
+TIP: You can use the `terraform validate` command to parse and validate your **main.tf** file. 
 
 ## Verify your installation
 
-4. Initialize Terraform with the `init` command. 
+4. Initialize Terraform using the `init` command. 
 
 ```shell
 $ terraform init
 ```
 
-5. Next, run the `plan` command to create the execution plan, or the set of changes, that are required to build the defined infrastructure. 
+5. Next, run the `plan` command to create the execution plan, or set of changes, that are required to build the defined infrastructure. 
 
 ```shell
 $ terraform plan
@@ -69,17 +69,17 @@ You can review the displayed plan to verify that the tasks shown are the appropr
 
 ## Provision the infrastructure
 
-6. After verifying that Terraform initialised successfully and generated an execution plan, use the `apply` command to provision the resource with the infrastructure objects that are defined in the plan.
+6. After verifying that Terraform initialised successfully and generated an execution plan, use the `apply` command to provision the infrastructure with the defined resources.
 
 ```shell
 $ terraform apply
 ```
 
-7. Type `yes` and press ENTER at the confirmation prompt. The command will take several minutes to run. A message displays with the number of created resources.
+7. Type `yes` and press ENTER at the confirmation prompt. The command takes several minutes to run. A message displays with the number of created resources.
 
 TIP: You can use the `terraform state list` command to see the exact names of the resources.
 
-## Destroy the infrastrucutre
+## Destroy the infrastructure
 
 8. To terminate all resources of the infrastructure, use the `destroy` command.
 
@@ -91,7 +91,7 @@ $ terraform destroy
 
 # Next Steps 
 
-Now that you can successfully use Terraform to provision an infrastructure locally, using Docker, learn more about using Terraform on multi-Cloud environments with other resources and providers.
+Now that you can successfully use Terraform with Docker to provision an infrastructure locally, learn more about using Terraform on multi-Cloud environments with other resources and providers.
 
 * Learn more about Terraform [providers](https://www.terraform.io/docs/providers/index.html).
 
