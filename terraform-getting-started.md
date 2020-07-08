@@ -2,11 +2,11 @@
 
 Terraform is a tool for defining and provisioning infrastructure as code (IaC) on multi-Cloud environemnts, using a language known as HashiCorp Configuration Language (HCL).
 
-This topic explains how to install Terraform, create a configuration file that uses Docker, intialize and verify your instance, deploy your configuration, and then destroy the infrastructure.
+This topic explains how to install Terraform, create a configuration file, intialize and verify your instance, deploy your configuration, and then destroy the infrastructure.
 
 ## Prerequisites
 
-To complete the steps in this topic you need to install Terraform and Docker. 
+To complete the steps in this topic you need to install Terraform and Docker. Docker is used to 
 * To install Terraform, go to [Terraform.io](https://www.terraform.io/downloads.html) and download the compressed binary application executable file that is appropriate for your development environment. Be sure to define the directory containing the Terraform binary file in your `$PATH`, for example `usr/local/bin`. 
 
 * To install Docker, go to [Docker.com](https://www.docker.com/products/docker-desktop) and download and install Docker Desktop. 
@@ -49,7 +49,7 @@ resource "docker_image" "nginx" {
 }
 ```
 
-TIP: You can use the `terraform validate` command to parse your main.tf file and validate the contents. 
+TIP: You can use the `terraform validate` command to parse your `main.tf` file and validate the contents. 
 
 ## Verify your installation
 
