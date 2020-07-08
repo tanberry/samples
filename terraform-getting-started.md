@@ -14,9 +14,9 @@ To complete the steps in this topic you need to install Terraform and Docker.
 
 ## Configure and initialize your environment 
 
-After downloading and installing Terraform and Docker, the next step is to create your working directory and a configuration file.
+After installing Terraform and Docker, the next step is to create your working directory and a configuration file.
 
-1. Create a new directory on your local machine and navigate to the new directory.
+1. In your console or terminal create a new directory on your local machine and navigate to the new directory.
 
 ```shell
 $ mkdir terraform-demo
@@ -77,7 +77,7 @@ $ terraform apply
 
 7. Type `yes` and press ENTER at the confirmation prompt. The command will take several minutes to run. A message displays with the number of created resources.
 
-TIP: You can use the `terraform state list` command to see the names of the resources.
+TIP: You can use the `terraform state list` command to see the exact names of the resources.
 
 ## Destroy the infrastrucutre
 
@@ -91,7 +91,7 @@ $ terraform destroy
 
 # Next Steps 
 
-Now that you have successfully used Terraform to provision an infrastructure locally, using Docker, learn more about using Terraform on multi-Cloud environments with 
+Now that you can successfully use Terraform to provision an infrastructure locally, using Docker, learn more about using Terraform on multi-Cloud environments with other resources and providers.
 
 * Learn more about Terraform [providers](https://www.terraform.io/docs/providers/index.html).
 
