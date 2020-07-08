@@ -1,12 +1,13 @@
 # Getting Started with Terraform
 
-Terraform is a tool for defining and provisioning infrastructure as code (IaC) on multi-Cloud environemnts, using a language known as HashiCorp Configuration Language (HCL).
+Terraform is a tool for defining and provisioning infrastructure as code (IaC) in a wide-range of environments, using a language known as HashiCorp Configuration Language (HCL).  
 
-This topic explains how to install Terraform, create a configuration file, intialize and verify your instance, deploy your configuration, and then destroy the infrastructure.
+This quick-start topic is intended to help you learn the basics of getting started with Terraform. Following the steps below, you will create a configuration file using pre-defined resources in a Docker container, intialize and verify your instance, deploy the resources, and then destroy the infrastructure. 
 
 ## Prerequisites
 
-To complete the steps in this topic you need to install Terraform and Docker. Docker is used to 
+To complete the steps in this topic you need to install Terraform and Docker.
+
 * To install Terraform, go to [Terraform.io](https://www.terraform.io/downloads.html) and download the compressed binary application executable file that is appropriate for your development environment. Be sure to define the directory containing the Terraform binary file in your `$PATH`, for example `usr/local/bin`. 
 
 * To install Docker, go to [Docker.com](https://www.docker.com/products/docker-desktop) and download and install Docker Desktop. 
@@ -49,41 +50,49 @@ resource "docker_image" "nginx" {
 }
 ```
 
-TIP: You can use the `terraform validate` command to parse your `main.tf` file and validate the contents. 
+TIP: You can use the `terraform validate` command to parse your **main.tf** file and validate the contents. 
 
 ## Verify your installation
 
-Initialize Terraform with the `init` command. 
+4. Initialize Terraform with the `init` command. 
 
 ```shell
 $ terraform init
 ```
 
-Run the `plan` command to create the execution plan, or the set of changes, that are required to achieve the defined infrastructure. 
+5. Next, run the `plan` command to create the execution plan, or the set of changes, that are required to build the defined infrastructure. 
 
 ```shell
 $ terraform plan
 ```
+You can review the displayed plan to verify that the tasks shown are the appropriate actions to provision your infrastructure.
 
 ## Provision the infrastructure
 
-After verifying that Terraform initialised successfully, use the `apply` command to provision the resource with the infrastructure objects that are defined in the plan.
+6. After verifying that Terraform initialised successfully and generated an execution plan, use the `apply` command to provision the resource with the infrastructure objects that are defined in the plan.
 
 ```shell
 $ terraform apply
 ```
 
-The command will take several minutes to run and display a message indicating that the resource was created.
+7. Type `yes` and press ENTER at the confirmation prompt. The command will take several minutes to run. A message displays with the number of created resources.
+
+TIP: You can use the `terraform state list` command to see the names of the resources.
 
 ## Destroy the infrastrucutre
 
-To terminate all resources of the infrastructure, use the `destroy` command.
+8. To terminate all resources of the infrastructure, use the `destroy` command.
 
 ```shell
 $ terraform destroy
 ```
  
- On the confirmation prompt, type `yes` and press ENTER. Terraform then destroys the resources.
+ 9. Type `yes` and press ENTER. Terraform then destroys the resources.
 
-# Next Steps
-=================TODO==============
+# Next Steps 
+
+Now that you have successfully used Terraform to provision an infrastructure locally, using Docker, learn more about using Terraform on multi-Cloud environments with 
+
+* Learn more about Terraform [providers](https://www.terraform.io/docs/providers/index.html).
+
+* Review other [use cases](https://www.terraform.io/intro/use-cases.html) with examples of Terraform configurations using multiple providers.
