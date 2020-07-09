@@ -52,7 +52,7 @@ resource "docker_image" "nginx" {
 
 **TIP**: You can use the `terraform validate` command to parse and validate your **main.tf** file. 
 
-## Verify your installation
+## Inititialize Terraform and verify your installation
 
 Initialize Terraform using the `init` command. 
 
@@ -77,7 +77,7 @@ $ terraform apply
 
 Type `yes` and press ENTER at the confirmation prompt. The command takes several minutes to run. A message displays with the number of created resources.
 
-**TIP**: You can use the `terraform state list` command to see the exact names of the resources.
+**TIP**: You can use the `terraform state list` command to display the exact names of the resources.
 
 ## Destroy the infrastructure
 
@@ -87,7 +87,7 @@ To terminate all resources of the infrastructure, use the `destroy` command.
 $ terraform destroy
 ```
  
-Type `yes` and press ENTER. Terraform then destroys the resources.
+Type `yes` and press ENTER. Terraform destroys the resources.
 
 # Next Steps 
 
