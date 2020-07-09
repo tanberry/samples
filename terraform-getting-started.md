@@ -23,13 +23,13 @@ $ mkdir terraform-demo
 $ cd terraform-demo
 ```
 
-Next, create a configuration file named `main.tf`.
+Next, create a configuration file named **main.tf**.
 
 ```shell
 $ touch main.tf
 ```
 
-Add the following lines to the `main.tf` file. 
+Add the following lines to the **main.tf** file. 
 
 ```hcl
 provider "docker" {
