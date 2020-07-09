@@ -2,7 +2,7 @@
 
 Terraform is a tool for defining and provisioning infrastructure as code (IaC) in a wide-range of environments, using a language known as HashiCorp Configuration Language (HCL).  
 
-This quick-start topic is intended to help you learn the basics of getting started with Terraform. Following the steps below, you will create a configuration file using pre-defined resources in a Docker container, initialize and verify your instance, deploy the resources, and then destroy the infrastructure. 
+This quick-start topic is intended to help you learn the basics of getting started with Terraform. Following the steps below, you will create a configuration file using pre-defined resources in a Docker container, initialize and verify your Terrafrom infrastructure, deploy resources, and then destroy the infrastructure. 
 
 ## Prerequisites
 
@@ -12,11 +12,11 @@ To complete the steps in this topic you need to install Terraform and Docker.
 
 * To install Docker, go to [Docker.com](https://www.docker.com/products/docker-desktop) and download and install Docker Desktop. 
 
-## Configure and initialize your environment 
+## Create and configure your environment 
 
 After installing Terraform and Docker, the next step is to create your working directory and a configuration file.
 
-In your console or terminal, create and navigate to a new directory on your local machine.
+In your console or terminal, create and navigate to a new directory.
 
 ```shell
 $ mkdir terraform-demo
@@ -69,7 +69,7 @@ You can review the displayed plan to verify that the tasks shown are the appropr
 
 ## Provision the infrastructure
 
-After verifying that Terraform initialised successfully and generated an execution plan, use the `apply` command to provision the infrastructure with the defined resources.
+After verifying that Terraform initialised successfully and generated an execution plan, use the `apply` command to provision the infrastructure.
 
 ```shell
 $ terraform apply
