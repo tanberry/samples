@@ -16,20 +16,20 @@ To complete the steps in this topic you need to install Terraform and Docker.
 
 After installing Terraform and Docker, the next step is to create your working directory and a configuration file.
 
-1. In your console or terminal, create and navigate to a new directory on your local machine.
+In your console or terminal, create and navigate to a new directory on your local machine.
 
 ```shell
 $ mkdir terraform-demo
 $ cd terraform-demo
 ```
 
-2. Next, create a configuration file named `main.tf`.
+Next, create a configuration file named `main.tf`.
 
 ```shell
 $ touch main.tf
 ```
 
-3. Add the following lines to the `main.tf` file. 
+Add the following lines to the `main.tf` file. 
 
 ```hcl
 provider "docker" {
@@ -54,13 +54,13 @@ resource "docker_image" "nginx" {
 
 ## Verify your installation
 
-4. Initialize Terraform using the `init` command. 
+Initialize Terraform using the `init` command. 
 
 ```shell
 $ terraform init
 ```
 
-5. Next, run the `plan` command to create the execution plan, or set of changes, that are required to build the defined infrastructure. 
+Next, run the `plan` command to create the execution plan, or set of changes, that are required to build the defined infrastructure. 
 
 ```shell
 $ terraform plan
@@ -69,25 +69,25 @@ You can review the displayed plan to verify that the tasks shown are the appropr
 
 ## Provision the infrastructure
 
-6. After verifying that Terraform initialised successfully and generated an execution plan, use the `apply` command to provision the infrastructure with the defined resources.
+After verifying that Terraform initialised successfully and generated an execution plan, use the `apply` command to provision the infrastructure with the defined resources.
 
 ```shell
 $ terraform apply
 ```
 
-7. Type `yes` and press ENTER at the confirmation prompt. The command takes several minutes to run. A message displays with the number of created resources.
+Type `yes` and press ENTER at the confirmation prompt. The command takes several minutes to run. A message displays with the number of created resources.
 
 **TIP**: You can use the `terraform state list` command to see the exact names of the resources.
 
 ## Destroy the infrastructure
 
-8. To terminate all resources of the infrastructure, use the `destroy` command.
+To terminate all resources of the infrastructure, use the `destroy` command.
 
 ```shell
 $ terraform destroy
 ```
  
- 9. Type `yes` and press ENTER. Terraform then destroys the resources.
+Type `yes` and press ENTER. Terraform then destroys the resources.
 
 # Next Steps 
 
