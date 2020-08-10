@@ -8,7 +8,7 @@ This quick-start topic is intended to help you learn the basics of getting start
 
 To complete the steps in this topic you need to install Terraform and Docker.
 
-* To install Terraform, go to [Terraform.io](https://www.terraform.io/downloads.html) and download the executable file that is appropriate for your development environment. Be sure to define the directory containing the Terraform binary file in your `$PATH`, for example `usr/local/bin`. 
+* To install Terraform, go to [Terraform.io](https://www.terraform.io/downloads.html) and download the executable file that is appropriate for your development environment. Be sure to define the directory containing the Terraform binary file in your `$PATH`, for example `/usr/local/bin`. 
 
 * To install Docker, go to [Docker.com](https://www.docker.com/products/docker-desktop) and download and install Docker Desktop. 
 
