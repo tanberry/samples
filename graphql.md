@@ -11,17 +11,17 @@ This tutorial explains the benefits of using cursor-based pagination for web apl
 * Typical time to complete: 20 minutes
 * Expected outcome: after completing this tutorial you will understand the concepts and uses of cursor-based paginaton, and you will have a reference implementation. 
 * Technologies used in this tutorial: 
-      * Prisma Framework
-      * GraphQL Nexus (with nexus-prisma)
-      * SQLite
-      * Apollo Server
+   * Prisma Framework
+   * GraphQL Nexus (with nexus-prisma)
+   * SQLite
+   * Apollo Server
 
 ## Prerequisites
 * ??
 * ??
 
 ## Introduction
-Pagination is used to define the way in which data (specifically list fields) are retrieved and then displayed as output. Using pagination is important for managing applicaion performance and usability. Modern web applications that handle real-time data are expected to load pages efficiently and minimize slow-rendering pages or scrolls that roll down into grey, unloaded emptiness. Pagination is particularly critical when accessing data graphs that might contain very large sets; for example a simple query of a list of all songs written in the 1990s would return a tremendously large list of songs. 
+Pagination is used to define the way in which data (specifically list fields) are retrieved and then displayed as output on a web application's page. Using pagination is important for managing applicaion performance and usability. Modern web applications that handle real-time data are expected to load pages efficiently and minimize slow-rendering pages or scrolls that roll down into grey, unloaded emptiness. Pagination is particularly critical when accessing data graphs that might contain very large sets; for example a simple query of a list of all songs written in the 1990s would return a tremendously large list of songs, and a potentially miserable user experience. 
 
 Cursor-based pagination is typically the preferred method, for several reasons. 
 
@@ -30,3 +30,8 @@ Cursor-based pagination is typically the preferred method, for several reasons.
 * Second, performance (speed!) is  one of the most iportant attributes of a successful web application. The query doesn't iterate through all of the records from the start, but rather it starts collecting at the point of the cursor element.
 
 "Apollo Client provides flexible cache APIs that **help you merge results from a paginated list field**, regardless of which pagination strategy your GraphQL server uses." (https://www.apollographql.com/docs/react/pagination/overview/)
+
+## Install and Configure 
+bbbb
+
+## _____ your SQLite database
