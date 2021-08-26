@@ -2,14 +2,14 @@
 
 ## Summary
 The two most common ways of implementing pagination in a GraphQL API are _limit/offset_  and _cursor-based pagination_. 
-* limit/offset: this method defines two values, the `limit` or the number of data a page will contain, and `offset`, the number of records to skip over belfore selecting the next data set set, or limit." 
+* limit/offset: this method defines two values, the *limit* or the number of data a page will contain, and *offset*, the number of records to skip over belfore selecting the next data set set, or limit." 
 * cursor-based: this method uses a unique ID for each list element (known as a cursor), to deliminate each set of data.
 
 This tutorial explains the benefits of using cursor-based pagination for web aplications, and leads you through the required steps. 
 
 ## What to expect in this tutorial
 * Typical time to complete: 20 minutes
-* Expected outcome: after completing this tutorial you will understand the concepts and uses of cursor-based paginaton, and you will have a reference implementation. 
+* Expected outcome: after completing this tutorial you will understand the concepts and uses of cursor-based paginaton, and you will have a reference implementation of a GrahpQL API. 
 * Technologies used in this tutorial: 
    * Prisma Framework
    * GraphQL Nexus (with nexus-prisma)
