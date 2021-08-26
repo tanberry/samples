@@ -31,7 +31,7 @@ Cursor-based pagination is typically the preferred method, for several reasons.
 
 "Apollo Client provides flexible cache APIs that **help you merge results from a paginated list field**, regardless of which pagination strategy your GraphQL server uses." (https://www.apollographql.com/docs/react/pagination/overview/)
 
-## Install and Configure
+## Install and Configure Prisma Framework
 bbbb
 
 ## _____ your SQLite database
