@@ -31,8 +31,52 @@ Cursor-based pagination is typically the preferred method, for several reasons.
 
 "Apollo Client provides flexible cache APIs that **help you merge results from a paginated list field**, regardless of which pagination strategy your GraphQL server uses." (https://www.apollographql.com/docs/react/pagination/overview/)
 
-## Install and Configure Prisma Framework
-bbbb
+## Install and Configure Nexus-Prisma
+(Refer to https://github.com/prisma/nexus-prisma for details.)
+
+1. Create a new directory for this work (this will be your TypeScript root directory).
+
+2. CD into your new directory, and install GraphQL Nexus (with nexus-prisma) and required dependencies with the following commands in your terminal:
+
+```bash
+npm add nexus-prisma nexus graphql @prisma/client
+npm add --dev prisma
+```
+
+```bash
+npm init -y
+npm i --save-dev prisma ts-node-dev typescript
+npm i @prisma/client apollo-server graphql nexus
+```
+
+MY COMBO:
+```bash
+npm init -y
+npm add nexus-prisma nexus graphql @prisma/client apollo-server
+npm add --save-dev prisma typescript
+
+---
+**NOTE**
+Using the `--save-dev` option adds the listed dependencies to your `package.json` file.
+
+2. Next, add the `tsconfig.json` file with the following content:
+
+```bash
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "module": "commonjs",
+        "lib": ["esnext"],
+        "strict": true,
+        "rootDir": ".",
+        "outDir": "dist",
+        "sourceMap": true,
+        "esModuleInterop": true
+    }
+}
+```
+
+
 
 ## _____ your SQLite database
 
