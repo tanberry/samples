@@ -8,9 +8,9 @@ This tutorial explains the benefits of using cursor-based pagination for GraphQL
 * Expected outcome: after completing this tutorial you will understand the concepts and uses of cursor-based paginaton, and you will have a reference implementation of a GrahphQL API.
 * Technologies used in this tutorial:
    * Prisma Framework and CLI tool (@prisma/client)
-   * GraphQL Nexus, with the nexus-prisma
-   * SQLite ( a common, easy tosetup database)
-   * Apollo Server
+   * [GraphQL Nexus](https://github.com/prisma/nexus-prisma), with the nexus-prisma (Nexus plugin for Prisma)
+   * SQLite (a common, easy to setup database)
+   * [Apollo Server]() (a state management library for handling GraphQL data)
 
 ## Prerequisites
 * ??
@@ -56,6 +56,7 @@ npm add --save-dev prisma typescript
 ---
 **NOTE**
 Using the `--save-dev` option adds the listed dependencies to your `package.json` file.
+---
 
 2. Next, add the `tsconfig.json` file with the following content:
 
@@ -74,7 +75,7 @@ Using the `--save-dev` option adds the listed dependencies to your `package.json
 }
 ```
 
-
+## Install and initialize Apollo Client
 
 ## _____ your SQLite database
 
