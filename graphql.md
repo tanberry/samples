@@ -1,4 +1,4 @@
-# TUTORIAL:Using cursor-based pagination in a GraphQL API
+# TUTORIAL: Using cursor-based pagination in a GraphQL API
 
 ## Summary
 The two most common ways of implementing pagination in a GraphQL API are _limit/offset_  and _cursor-based pagination_. 
